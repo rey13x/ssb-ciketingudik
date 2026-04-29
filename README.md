@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# SSB Ciketing Udik Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamat datang di website resmi SSB Ciketing Udik sebuah platform digital yang dibangun untuk memperkenalkan, mengembangkan, dan mendukung kegiatan sekolah sepak bola di Ciketing Udik.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## >> Tentang Proyek
 
-## React Compiler
+Website ini dibuat sebagai media informasi dan promosi untuk SSB Ciketing Udik.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Melalui website ini, pengunjung dapat mengetahui:
 
-## Expanding the ESLint configuration
+* Sejarah dan perkembangan SSB
+* Program latihan dan pembinaan
+* Tim pelatih
+* Dokumentasi kegiatan
+* Informasi terbaru
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Website ini bukan hanya tampilan, tetapi juga representasi dari semangat dan perkembangan sepak bola usia dini di lingkungan lokal.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## >> Kolaborasi
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Proyek ini merupakan hasil kerja sama antara:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* Bapak Nasip — Coach SSB Ciketing Udik
+* Raihaan Bagastiam Pratama — Developer
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Kolaborasi ini menggabungkan pengalaman di lapangan dengan teknologi digital agar SSB dapat berkembang lebih modern dan dikenal lebih luas.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## >> Fitur Utama
+
+* Tampilan modern dan responsif
+* Optimal di perangkat mobile dan desktop
+* Animasi interaktif (scroll reveal, parallax)
+* Galeri kegiatan
+* Profil pelatih
+* Blog / artikel
+
+---
+
+## >> Teknologi
+
+Website ini dibangun menggunakan:
+
+* React (Vite)
+* TypeScript
+* Tailwind CSS
+
+---
+
+## >> Tujuan
+
+* Meningkatkan eksistensi SSB Ciketing Udik
+* Menjadi pusat informasi resmi
+* Mendukung perkembangan pemain muda
+* Membawa SSB ke level yang lebih profesional
+
+---
+
+## >> Penutup
+
+Website ini adalah langkah dari lapangan sederhana menuju platform digital yang lebih luas.
+
+"Lebih dari sekadar sekolah bola — ini adalah tempat tumbuhnya masa depan."
+
+---
+
+## >> Butuh Website?
+
+Ingin dibuatkan website seperti ini?
+
+Let's talk:
+https://instagram.com/sixsevenrai
+
+---
