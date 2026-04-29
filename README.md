@@ -1,6 +1,22 @@
 # SSB Ciketing Udik Website
 
-Selamat datang di website resmi SSB Ciketing Udik sebuah platform digital yang dibangun untuk memperkenalkan, mengembangkan, dan mendukung kegiatan sekolah sepak bola di Ciketing Udik.
+Selamat datang di website resmi SSB Ciketing Udik — sebuah platform digital yang dibangun untuk memperkenalkan, mengembangkan, dan mendukung kegiatan sekolah sepak bola di Ciketing Udik.
+
+---
+
+## >> Preview Website
+
+<p align="center">
+  <img src="public/images/Halaman%20Utama.png" width="30%" />
+  <img src="public/images/Halaman%20Tentang.png" width="30%" />
+  <img src="public/images/Halaman%20Program.png" width="30%" />
+</p>
+
+<p align="center">
+  <img src="public/images/Halaman%20Galeri.png" width="30%" />
+  <img src="public/images/Halaman%20Blog.png" width="30%" />
+  <img src="public/images/Halaman%20Kontak.png" width="30%" />
+</p>
 
 ---
 
