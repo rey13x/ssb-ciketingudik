@@ -7,18 +7,17 @@ Selamat datang di website resmi SSB Ciketing Udik — sebuah platform digital ya
 ## >> Preview Website
 
 <p align="center">
-  <img src="images/Halaman%20Utama.png" width="30%" />
-  <img src="images/Halaman%20Tentang.png" width="30%" />
-  <img src="images/Halaman%20Program.png" width="30%" />
+  <img src="src/images/Halaman%20Utama.png" width="30%" alt="Halaman Utama" />
+  <img src="src/images/Halaman%20Tentang.png" width="30%" alt="Halaman Tentang" />
+  <img src="src/images/Halaman%20Program.png" width="30%" alt="Halaman Program" />
 </p>
 
 <p align="center">
-  <img src="images/Halaman%20Galeri.png" width="30%" />
-  <img src="images/Halaman%20Blog.png" width="30%" />
-  <img src="images/Halaman%20Kontak.png" width="30%" />
+  <img src="src/images/Halaman%20Galeri.png" width="30%" alt="Halaman Galeri" />
+  <img src="src/images/Halaman%20Blog.png" width="30%" alt="Halaman Blog" />
+  <img src="src/images/Halaman%20Kontak.png" width="30%" alt="Halaman Kontak" />
 </p>
 
----
 
 ## >> Tentang Proyek
 
