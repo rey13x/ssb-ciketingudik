@@ -34,7 +34,7 @@ export const BriefHistory = () => {
                   />
                 </Parallax>
               </div>
-              <div className="absolute -bottom-6 -right-6 hidden rounded-2xl bg-primary p-6 shadow-button-yellow sm:block">
+              <div className="absolute -bottom-6 -right-6 hidden rounded-2xl bg-primary p-6 sm:block">
                 <div className="font-display text-5xl leading-none text-primary-foreground">
                   2013
                 </div>

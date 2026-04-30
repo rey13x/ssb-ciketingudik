@@ -5,7 +5,7 @@ import { Reveal } from "@/components/common/Reveal";
 
 export const CTASection = () => {
   return (
-    <section className="relative overflow-hidden bg-foreground py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-background py-24 sm:py-32">
       {/* Diagonal yellow slash */}
       <div
         aria-hidden
@@ -13,7 +13,7 @@ export const CTASection = () => {
       />
       <div
         aria-hidden
-        className="absolute inset-y-0 left-[20%] w-1 -skew-x-12 bg-foreground"
+        className="absolute inset-y-0 left-[20%] w-1 -skew-x-12 bg-background"
       />
 
       {/* Decorative dots */}
@@ -25,7 +25,7 @@ export const CTASection = () => {
       <div className="container relative">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal>
-            <div className="text-primary-foreground">
+            <div className="text-foreground">
               <div className="text-xs font-bold uppercase tracking-[0.25em] opacity-70">
                 Bergabung Sekarang
               </div>
@@ -36,8 +36,8 @@ export const CTASection = () => {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="text-background">
-              <p className="text-base leading-relaxed text-background/85 max-w-md">
+            <div className="text-foreground">
+              <p className="text-base leading-relaxed text-muted-foreground max-w-md">
                 Datang ke sesi latihan, rasakan atmosfernya, dan biarkan
                 pelatih kami menilai potensi terbaik anak Anda. Tidak ada
                 biaya, tidak ada komitmen.
@@ -51,8 +51,8 @@ export const CTASection = () => {
                 <Button
                   asChild
                   size="xl"
-                  variant="ghost"
-                  className="text-background border-2 border-background/30 hover:bg-background hover:text-foreground"
+                  variant="outline"
+                  className="border-2"
                 >
                   <Link to="/programs">Pelajari Program</Link>
                 </Button>

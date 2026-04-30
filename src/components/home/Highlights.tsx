@@ -39,29 +39,7 @@ export const Highlights = () => {
           description="Kami percaya setiap anak punya potensi untuk berkembang. Tugas kami adalah menyediakan lingkungan terbaik untuk mereka tumbuh."
         />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {highlights.map((h, i) => (
-            <Reveal key={h.title} delay={i * 0.08}>
-              <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-7 transition-smooth hover:-translate-y-1 hover:border-primary hover:shadow-elegant">
-                <div
-                  aria-hidden
-                  className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/0 blur-2xl transition-smooth group-hover:bg-primary/15"
-                />
-                <div className="relative">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary transition-bounce group-hover:rotate-[-8deg] group-hover:bg-primary group-hover:text-primary-foreground">
-                    <h.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="mt-5 font-display text-2xl text-foreground">
-                    {h.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {h.description}
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+
       </div>
     </section>
   );

@@ -22,30 +22,30 @@ const Programs = () => {
       {/* Age groups */}
       <section className="bg-background py-20 sm:py-28">
         <div className="container space-y-20">
-          {ageGroups.map((group, idx) => (
+          {ageGroups.filter(g => g.id === "u16").map((group, idx) => (
             <article
               key={group.id}
               id={group.id}
-              className="grid scroll-mt-24 items-start gap-10 lg:grid-cols-12"
+              className="grid scroll-mt-24 items-start gap-6 sm:gap-10 lg:grid-cols-12"
             >
               <Reveal className="lg:col-span-4">
-                <div className="sticky top-28">
+                <div className="sticky top-20 sm:top-28">
                   <div className="relative inline-block">
-                    <span className="font-display text-[8rem] leading-none text-primary/20 sm:text-[10rem]">
+                    <span className="font-display text-[4rem] leading-none text-primary/50 sm:text-[5rem] lg:text-[10rem]">
                       {group.name}
                     </span>
-                    <div className="absolute -right-4 top-2 flex h-16 w-16 items-center justify-center rounded-2xl bg-foreground text-primary">
-                      <group.icon className="h-8 w-8" />
+                    <div className="absolute -right-2 top-1 flex h-12 w-12 items-center justify-center rounded-2xl bg-foreground text-primary sm:h-16 sm:w-16 lg:-right-4 lg:top-2">
+                      <group.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                     </div>
                   </div>
-                  <div className="mt-2 text-sm font-bold uppercase tracking-widest text-muted-foreground">
+                  <div className="mt-2 text-xs sm:text-sm font-bold uppercase tracking-widest text-muted-foreground">
                     {group.ageRange}
                   </div>
                 </div>
               </Reveal>
 
               <Reveal delay={0.1} className="lg:col-span-8">
-                <div className="rounded-2xl border border-border bg-card p-8 transition-smooth hover:border-primary hover:shadow-elegant sm:p-10">
+                <div className="rounded-2xl bg-card p-6 transition-smooth hover:shadow-elegant sm:p-8 lg:p-10">
                   <h3 className="font-display text-3xl text-foreground sm:text-4xl">
                     {group.focus}
                   </h3>
@@ -60,7 +60,7 @@ const Programs = () => {
                         <Calendar className="h-3.5 w-3.5 text-primary" />
                         Jadwal Latihan
                       </h4>
-                      <ul className="mt-4 divide-y divide-border rounded-lg border border-border">
+                      <ul className="mt-4 divide-y divide-border rounded-lg">
                         {group.schedule.map((s) => (
                           <li
                             key={s.day}
@@ -106,10 +106,6 @@ const Programs = () => {
                   </div>
                 </div>
               </Reveal>
-
-              {idx < ageGroups.length - 1 && (
-                <div className="col-span-12 mt-2 h-px bg-border" />
-              )}
             </article>
           ))}
         </div>
@@ -127,16 +123,26 @@ const Programs = () => {
           <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {facilities.map((f, i) => (
               <Reveal key={f.title} delay={i * 0.06}>
-                <div className="group h-full rounded-2xl border border-border bg-card p-7 transition-smooth hover:-translate-y-1 hover:border-primary hover:shadow-elegant">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary transition-bounce group-hover:rotate-[-8deg] group-hover:bg-primary group-hover:text-primary-foreground">
-                    <MapPin className="h-5 w-5" />
+                <div 
+                  className="group relative h-full rounded-2xl p-7 transition-smooth hover:-translate-y-1 hover:shadow-elegant overflow-hidden"
+                  style={{
+                    backgroundImage: 'url(/images/foto9.png)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  <div className="absolute inset-0 bg-black/40 rounded-2xl" />
+                  <div className="relative z-10">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary transition-bounce group-hover:rotate-[-8deg] group-hover:bg-primary group-hover:text-primary-foreground">
+                      <MapPin className="h-5 w-5" />
+                    </div>
+                    <h3 className="mt-5 font-display text-2xl text-background">
+                      {f.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-background/80">
+                      {f.description}
+                    </p>
                   </div>
-                  <h3 className="mt-5 font-display text-2xl text-foreground">
-                    {f.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {f.description}
-                  </p>
                 </div>
               </Reveal>
             ))}

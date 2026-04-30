@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5 hover:shadow-button-yellow",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -21,7 +21,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent/20 hover:text-foreground",
         link: "text-foreground underline-offset-4 hover:underline hover:text-primary",
         hero:
-          "bg-primary text-primary-foreground hover:bg-primary-glow hover:-translate-y-0.5 shadow-button-yellow",
+          "bg-primary text-primary-foreground hover:bg-primary/90 hover:-translate-y-0.5",
         dark:
           "bg-foreground text-background hover:bg-foreground/85 hover:-translate-y-0.5",
       },

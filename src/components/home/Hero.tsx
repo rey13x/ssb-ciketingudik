@@ -68,11 +68,6 @@ export const Hero = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-4xl"
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary-foreground animate-pulse" />
-            Pendaftaran U10 · U13 · U16 dibuka
-          </div>
-
           <h1 className="mt-6 font-display text-[2.75rem] leading-[0.92] tracking-tight text-background sm:text-7xl lg:text-[7.5rem]">
             SSB Ciketing
             <br />

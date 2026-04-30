@@ -25,7 +25,7 @@ const Blog = () => {
           <Reveal>
             <Link
               to="#"
-              className="group grid overflow-hidden rounded-2xl border border-border bg-card transition-smooth hover:border-primary hover:shadow-elegant lg:grid-cols-2"
+              className="group grid overflow-hidden rounded-2xl bg-card transition-smooth hover:shadow-elegant lg:grid-cols-2"
             >
               <div className="relative aspect-[4/3] overflow-hidden lg:aspect-auto">
                 <img
@@ -70,7 +70,7 @@ const Blog = () => {
               <Reveal key={post.id} delay={i * 0.07}>
                 <Link
                   to="#"
-                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-smooth hover:-translate-y-1 hover:border-primary hover:shadow-elegant"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl bg-card transition-smooth hover:-translate-y-1 hover:shadow-elegant"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img

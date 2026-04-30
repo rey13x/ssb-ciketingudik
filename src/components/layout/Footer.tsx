@@ -10,8 +10,6 @@ const footerLinks = {
     { to: "/blog", label: "Blog" },
   ],
   Program: [
-    { to: "/programs#u10", label: "Kategori U10" },
-    { to: "/programs#u13", label: "Kategori U13" },
     { to: "/programs#u16", label: "Kategori U16" },
     { to: "/contact", label: "Pendaftaran" },
   ],
@@ -42,27 +40,29 @@ export const Footer = () => {
             </div>
           </div>
 
-          {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
-              <h4 className="font-display text-lg tracking-wide text-foreground mb-4">
-                {title}
-              </h4>
-              <ul className="space-y-2.5 text-sm">
-                {links.map((l) => (
-                  <li key={l.to}>
-                    <Link
-                      to={l.to}
-                      className="text-muted-foreground transition-smooth hover:text-primary"
-                    >
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-2 lg:col-span-2">
+            {Object.entries(footerLinks).map(([title, links]) => (
+              <div key={title}>
+                <h4 className="font-display text-lg tracking-wide text-foreground mb-4">
+                  {title}
+                </h4>
+                <ul className="space-y-2.5 text-sm">
+                  {links.map((l) => (
+                    <li key={l.to}>
+                      <Link
+                        to={l.to}
+                        className="text-muted-foreground transition-smooth hover:text-primary"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
-          <div>
+          <div className="lg:col-span-1">
             <h4 className="font-display text-lg tracking-wide text-foreground mb-4">
               Kontak
             </h4>

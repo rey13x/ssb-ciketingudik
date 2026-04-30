@@ -1,4 +1,5 @@
-import { Target, Eye, Heart } from "lucide-react";
+import { Target, Eye, Heart, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { PageHeader } from "@/components/common/PageHeader";
 import { Reveal } from "@/components/common/Reveal";
 import { Parallax } from "@/components/common/Parallax";
@@ -94,7 +95,7 @@ const About = () => {
             description="Tiga hal yang menjadi kompas setiap keputusan kami — di lapangan maupun di luar lapangan."
             align="center"
           />
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
+          <div className="mt-14 flex gap-6 overflow-x-auto pb-4">
             {[
               {
                 icon: Eye,
@@ -116,7 +117,7 @@ const About = () => {
               },
             ].map((v, i) => (
               <Reveal key={v.title} delay={i * 0.1}>
-                <div className="group h-full rounded-2xl border border-border bg-card p-8 transition-smooth hover:-translate-y-1 hover:border-primary hover:shadow-elegant">
+                <div className="group min-w-[320px] rounded-2xl bg-card p-8 transition-smooth hover:shadow-elegant">
                   <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-bounce group-hover:rotate-[-8deg]">
                     <v.icon className="h-7 w-7" />
                   </div>
@@ -130,6 +131,13 @@ const About = () => {
               </Reveal>
             ))}
           </div>
+          <motion.div
+            className="mt-6 flex justify-center opacity-50"
+            animate={{ x: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ArrowRight className="h-6 w-6 text-foreground" />
+          </motion.div>
         </div>
       </section>
 
@@ -145,7 +153,7 @@ const About = () => {
           <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {coaches.map((c, i) => (
               <Reveal key={c.id} delay={i * 0.1}>
-                <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition-smooth hover:-translate-y-1 hover:border-primary hover:shadow-elegant">
+                <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-card transition-smooth hover:-translate-y-1 hover:shadow-elegant">
                   <div className="relative aspect-[3/4] overflow-hidden bg-secondary">
                     <img
                       src={c.image}

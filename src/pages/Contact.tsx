@@ -120,7 +120,7 @@ const Contact = () => {
                       <li key={c.label}>
                         <Wrapper
                           href={c.href}
-                          className="group flex items-start gap-4 rounded-xl border border-border bg-card p-5 transition-smooth hover:border-primary hover:shadow-card-soft"
+                          className="group flex items-start gap-4 rounded-xl bg-card p-5 transition-smooth hover:shadow-card-soft"
                         >
                           <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary transition-bounce group-hover:bg-primary group-hover:text-primary-foreground">
                             <c.icon className="h-5 w-5" />
@@ -158,7 +158,7 @@ const Contact = () => {
 
             {/* Form column */}
             <Reveal delay={0.1} className="lg:col-span-7">
-              <div className="rounded-2xl border border-border bg-card p-8 shadow-card-soft sm:p-10">
+              <div className="rounded-2xl bg-card p-8 shadow-card-soft sm:p-10">
                 <h2 className="font-display text-3xl text-foreground sm:text-4xl">
                   Kirim pesan
                 </h2>
