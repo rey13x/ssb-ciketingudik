@@ -4,15 +4,6 @@ import { Button } from "@/components/ui/button";
 import { blogPosts } from "@/data/blog";
 import { PageHeader } from "@/components/common/PageHeader";
 
-const categoryColors: Record<string, { bg: string; text: string }> = {
-  Prestasi: { bg: "bg-blue-100", text: "text-blue-700" },
-  Tips: { bg: "bg-green-100", text: "text-green-700" },
-  Pengumuman: { bg: "bg-red-100", text: "text-red-700" },
-  Edukasi: { bg: "bg-purple-100", text: "text-purple-700" },
-  Cerita: { bg: "bg-orange-100", text: "text-orange-700" },
-  Acara: { bg: "bg-pink-100", text: "text-pink-700" },
-};
-
 // Article content based on ID - customize each article's content here
 const articleContentMap: Record<string, string> = {
   "1": `
@@ -153,6 +144,7 @@ export default function BlogArticle() {
   const navigate = useNavigate();
 
   const article = blogPosts.find((post) => post.id === id);
+  const articleContent = articleContentMap[id || ""] || "";
 
   if (!article) {
     return (
@@ -171,10 +163,6 @@ export default function BlogArticle() {
       </div>
     );
   }
-
-  const categoryColor =
-    categoryColors[article.category] || categoryColors.Prestasi;
-  const articleContent = articleContentMap[id || ""] || "";
 
   return (
     <>
@@ -195,7 +183,7 @@ export default function BlogArticle() {
           <div className="mb-8">
             <div className="mb-4">
               <span
-                className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${categoryColor.bg} ${categoryColor.text}`}
+                className="inline-block px-3 py-1 rounded-full text-sm font-semibold bg-background text-foreground"
               >
                 {article.category}
               </span>
