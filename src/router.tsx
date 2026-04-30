@@ -3,6 +3,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Activities from "./pages/Activities";
 import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import Programs from "./pages/Programs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -16,6 +17,7 @@ export const routers = [
       { path: "about", element: <About /> },
       { path: "programs", element: <Programs /> },
       { path: "activities", element: <Activities /> },
+      { path: "blog/:id", element: <BlogArticle /> },
       { path: "blog", element: <Blog /> },
       { path: "contact", element: <Contact /> },
       /* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */

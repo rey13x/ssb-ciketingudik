@@ -4,6 +4,7 @@ import { BriefHistory } from "@/components/home/BriefHistory";
 import { ProgramsTeaser } from "@/components/home/ProgramsTeaser";
 import { Marquee } from "@/components/home/Marquee";
 import { CTASection } from "@/components/home/CTASection";
+import { BlogCards } from "@/components/home/BlogCards";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <BriefHistory />
       <ProgramsTeaser />
       <CTASection />
+      <BlogCards />
     </>
   );
 };
